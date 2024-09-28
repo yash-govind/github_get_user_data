@@ -23,7 +23,7 @@ searchBtn.addEventListener("click", () => {
 
       searchBtn.style.display = "none";
       TextInput.style.display = "none";
-       header.style.display = "inline";
+      header.style.display = "none";
       userInfo.innerHTML = `
          <img src ="${data.avatar_url}"></img>
          <h2> Name : ${data.name}</h2>
@@ -45,5 +45,5 @@ goBackBtn.addEventListener("click", () => {
   searchBtn.style.display = "inline";
   TextInput.style.display = "inline";
   goBackBtn.style.display = "";
- 
+  header.style.display = "inline"
 });
